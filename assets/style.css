@@ -1,0 +1,133 @@
+/*font custom uwu*/
+@font-face {
+    font-family: Gotham-Rounded;
+    src: url(/auxilio/static/Gotham\ Rounded\ Light.otf) format("opentype");
+    /*nose qe es opentype auxilio😭*/
+}
+
+@font-face {
+    font-family: Gotham-Rounded-Bold;
+    src: url(/auxilio/static/Gotham\ Rounded\ Medium.otf) format("opentype");
+}
+
+/*para definir variables*/
+:root {
+    --color-font: rgb(40, 35, 44);
+    --color-highlight: rgb(39, 35, 93);
+}
+
+/*tamaño de la imagen uwu*/
+.logo {
+    border-radius: 0.5rem;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+body,
+html {
+    color: var(--color-font);
+    /*le tienes qe poner 3234238 fuentes por si no sirve la qe qerias al parecer*/
+    font-family: Gotham-Rounded, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+}
+
+body,
+html,
+li,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-bottom: 4rem;
+}
+
+/*es para qe las cosas qeden del mismo tamaño aunque tengan padding (?? enfin recomendado ponerle eso*/
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+a,
+h1,
+h2 {
+    font-family: Gotham-Rounded-Bold;
+}
+
+/*para que los links salgan normales y no azul/morado con linea abajo*/
+.home,
+a,
+a:hover,
+a:visited,
+a:active {
+    color: var(--color-font);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--color-highlight);
+}
+
+.header {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+nav {
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 255, 0.3);
+    display: inline-block;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+nav li {
+    border-radius: 0.5rem;
+    float: left;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+nav li:hover {
+    background-color: rgb(161, 135, 255);
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width:600px) {
+    nav li {
+        margin-bottom: .5rem
+    }
+}
+
+main {
+    border-radius: 1rem;
+    background-color: rgba(124, 252, 0, 0.3);
+    margin: 0 auto 3rem;
+    max-width: 600px;
+    padding: 1rem 2rem 5rem;
+    width: 100%;
+}
+
+strong {
+    border-bottom: 1px solid var(--color-highlight);
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 4rem;
+}
