@@ -54,7 +54,8 @@ body {
 
 a,
 h1,
-h2 {
+h2,
+h3 {
     font-family: Gotham-Rounded-Bold;
 }
 
@@ -81,7 +82,7 @@ nav {
     border-radius: 1rem;
     background-color: rgba(0, 0, 255, 0.3);
     display: inline-block;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
     padding: 1rem;
 }
 
@@ -129,5 +130,34 @@ strong {
 
 p {
     line-height: 1.5;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+#cosas {
+    display: flex;
+}
+
+.divs {
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    padding: 0.5rem;
+}
+
+#verde {
+    background-color: rgba(124, 252, 0, 0.4);
+}
+
+#rojo {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+#naranja {
+    background-color: rgba(225, 165, 0, 0.4);
+}
+
+.imagenes {
+    margin: auto;
+    max-width: 150px;
+    max-height: 150px;
 }
